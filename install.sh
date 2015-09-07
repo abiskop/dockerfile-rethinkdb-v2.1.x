@@ -6,3 +6,6 @@ source /etc/lsb-release && echo "deb http://download.rethinkdb.com/apt $DISTRIB_
 wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | apt-key add -
 apt-get update -y
 apt-get install -y rethinkdb=${RETHINKDB_VERSION}${DISTRIB_CODENAME}
+
+rethinkdb --version
+
